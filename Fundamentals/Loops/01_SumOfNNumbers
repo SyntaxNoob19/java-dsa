@@ -1,0 +1,31 @@
+// Write a Program to Calculate Sum of first N Natural Numbers (here value of N is Entered by user)
+
+// Concept:
+// Natural numbers start from 1 (1, 2, 3, 4, ...).
+// To find the sum of the first N natural numbers,
+// we add numbers from 1 to N.
+
+//Fastest Method - int sum = n * (n + 1) / 2;
+
+
+import java.util.*;
+
+class SumNaturalNumbers
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        for(int i = 1; i <= n; i++)
+        {
+            sum = sum + i;
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
+
+
